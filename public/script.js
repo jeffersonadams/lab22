@@ -8,6 +8,6 @@ app.controller('myCtrl', function($scope, $http) {
     url: '/languages'
   }).then(function(response) {
     console.log(response);
-    $scope.name = response.data;
+    $scope.quote = response;
   });
 });
